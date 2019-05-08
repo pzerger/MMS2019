@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "adminPassword": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "storageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "location": {
+            "value": "[resourceGroup().location]"
+        }
+    }
+}
